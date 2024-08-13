@@ -1,0 +1,17 @@
+version: 2
+sources:
+    - name: in.c-csv-import
+      freshness:
+        warn_after:
+            count: 1
+            period: day
+      database: KEBOOLA_21520
+      schema: in.c-csv-import
+      loaded_at_field: '"_timestamp"'
+      tables:
+        - name: L0_jmena
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns: []
