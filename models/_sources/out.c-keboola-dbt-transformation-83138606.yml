@@ -5,7 +5,7 @@ sources:
         warn_after:
             count: 1
             period: day
-      database: '{{ env_var("DBT_KBC_MUJ_PROJEKT_DATABASE") }}'
+      database: KEBOOLA_21520
       schema: out.c-keboola-dbt-transformation-83138606
       loaded_at_field: '"_timestamp"'
       tables:
