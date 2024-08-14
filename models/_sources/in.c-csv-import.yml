@@ -5,7 +5,7 @@ sources:
         warn_after:
             count: 1
             period: day
-      database: KEBOOLA_21520
+      database: '{{ env_var("DBT_KBC_MUJ_PROJEKT_DATABASE") }}'
       schema: in.c-csv-import
       loaded_at_field: '"_timestamp"'
       tables:
