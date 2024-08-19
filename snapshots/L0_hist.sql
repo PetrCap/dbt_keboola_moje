@@ -1,4 +1,4 @@
-{% snapshot L1_NAME_TABLE_HIST %}
+{% snapshot L0_hist %}
 
 {{
         config(
@@ -10,6 +10,6 @@
         )
     }}
 
-select * FROM {{ ref("L1_NAME_TABLE") }}
+select * FROM {{ source('in.c-csv-import', 'L0_jmena') }}
 
 {% endsnapshot %}

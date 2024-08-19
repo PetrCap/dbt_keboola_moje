@@ -3,4 +3,4 @@
 
 select *
 from {{ source('in.c-csv-import', 'L0_jmena') }}
-where "Jmeno" = 'Martin'
+where "Jmeno" = 'Petr'
